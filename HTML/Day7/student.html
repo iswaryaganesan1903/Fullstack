@@ -1,0 +1,116 @@
+<html>
+<head>
+    <title>Student Regestrtion Portal</title>
+</head>
+
+<body>
+    <h1>Student Regestration form</h1>
+    <div>
+        <section>
+            <form>
+
+                <label>Enter your Name:</label>
+                <input type="text" required placeholder="BLOCK LETTER WITH INITIAL" />
+                <br>
+                <label>Father Name:</label>
+                <input type="text" placeholder="Enter father name">
+                <br>
+                <label>Mother Name:</label>
+                <input type="text" placeholder="Enter mother name">
+                <br>
+                <label>Enter DOB:</label>
+                <input type="date" required />
+                <br>
+                <label>Enter Mobile No:</label>
+                <input type="tel" minlength="10" maxlength="10" required placeholder="10 Digit Number" />
+                <br>
+                <label>Address:</label><br>
+                <textarea rows="4" cols="40"></textarea>
+                <br>
+                <label>Enter Mail Id:</label>
+                <input type="email" placeholder="example@gmail.com" required>
+                <br>
+                <label>Pick Gender:</label>
+                <input type="radio" required name="gender"> Male
+                <input type="radio" required name="gender"> FeMale
+                <br>
+                <fieldset>
+                    <legend><b>Academic Details</b></legend>
+
+                    <label>Roll Number:</label>
+                    <input type="text">
+                    <br><br>
+
+                    <label>Department:</label>
+                    <select>
+                        <option>CSE</option>
+                        <option>ECE</option>
+                        <option>EEE</option>
+                        <option>MECH</option>
+                        <option>CIVIL</option>
+                    </select>
+                    <br><br>
+
+                    <label>Year:</label>
+                    <select>
+                        <option>1st Year</option>
+                        <option>2nd Year</option>
+                        <option>3rd Year</option>
+                        <option>4th Year</option>
+                    </select>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend><b>Account Details</b></legend>
+
+                    <label>Username:</label>
+                    <input type="text">
+                    <br><br>
+
+                    <label>Password:</label>
+                    <input type="password">
+                    <br><br>
+
+                    <label>Confirm Password:</label>
+                    <input type="password">
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend><b>Other Details</b></legend>
+
+                    <label>Upload Photo:</label>
+                    <input type="file">
+                    <br><br>
+
+                    <label>Languages Known:</label>
+                    <input type="checkbox"> Tamil
+                    <input type="checkbox"> English
+                    <input type="checkbox"> Hindi
+                    <br><br>
+
+                    <label>Blood Group:</label>
+                    <select>
+                        <option>A+</option>
+                        <option>B+</option>
+                        <option>O+</option>
+                        <option>AB+</option>
+                    </select>
+
+                </fieldset>
+
+                <br>
+
+                <input type="submit" value="Register">
+                <input type="reset" value="Clear">
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>

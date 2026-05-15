@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Login & Signup Form</title>
+</head>
+
+<body>
+
+    <h1>Student Login Form</h1>
+
+    <form>
+
+        <label>Email:</label>
+        <input type="email"
+               placeholder="Enter your email"
+               required>
+        <br>
+
+        <label>Password:</label>
+        <input type="password"
+               placeholder="Enter password"
+               minlength="6"
+               maxlength="12"
+               required>
+        <br>
+
+        <input type="submit" value="Login">
+        <input type="reset" value="Clear">
+
+    </form>
+
+    <hr>
+
+    <h1>Student Signup Form</h1>
+
+    <form>
+
+        <label>Student Name:</label>
+        <input type="text"
+               placeholder="Enter your full name"
+               minlength="3"
+               maxlength="25"
+               required>
+        <br>
+
+        <label>Mobile Number:</label>
+        <input type="tel"
+               placeholder="Enter mobile number"
+               minlength="10"
+               maxlength="10"
+               required>
+        <br>
+
+        <label>Email:</label>
+        <input type="email"
+               placeholder="Enter your email"
+               required>
+        <br>
+
+        <label>Password:</label>
+        <input type="password" placeholder="Create password" minlength="6" maxlength="12" required>
+        <br>
+
+        <label>Confirm Password:</label>
+        <input type="password"
+               placeholder="Re-enter password"
+               minlength="6"
+               maxlength="12"
+               required>
+        <br>
+
+        <label>Department:</label>
+        <select required>
+            <option value="">Select Department</option>
+            <option>CSE</option>
+            <option>ECE</option>
+            <option>EEE</option>
+            <option>MECH</option>
+            <option>CIVIL</option>
+        </select>
+        <br>
+
+        <input type="checkbox" required>
+        I agree to Terms and Conditions
+        <br>
+
+        <input type="submit" value="Signup">
+        <input type="reset" value="Clear">
+
+    </form>
+
+</body>
+</html>
