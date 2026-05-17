@@ -1,0 +1,173 @@
+<html>
+
+<head>
+    <title>Survey Form</title>
+
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mobile Addiction Survey Form to collect information about mobile usage habits and addiction levels.">
+    <meta name="keywords" content="Mobile Addiction, Survey Form, Mobile Usage, HTML Form, Smartphone Survey">
+    <meta name="author" content="Iswarya">
+
+</head>
+
+<body>
+    <center>
+        <h1>Mobile Addiction Survey Form</h1>
+    </center>
+
+    <div>
+        <form>
+
+            <div>
+
+                <h2>Personal Details</h2>
+
+                <ol>
+
+                    <li>
+                        <label>Enter Form Filling Date & Time</label>
+                        <input type="datetime-local" />
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <label>Enter your Name</label>
+                        <input type="text" placeholder="BLOCK LETTER" />
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <label>Enter Your Age</label>
+                        <input type="number" placeholder="Enter Age" />
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <label>Enter Mobile No</label>
+                        <input type="tel" minlength="10" maxlength="10" required
+                            placeholder="10 Digit Number" />
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <label>Enter Mail Id</label>
+                        <input type="email" placeholder="example@gmail.com" required>
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <label>Pick Gender</label>
+
+                        <input type="radio" required name="gender"> Male
+                        <input type="radio" required name="gender"> Female
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <label>Pick Field</label>
+
+                        <input type="radio" required name="field"> School Student
+                        <input type="radio" required name="field"> College Student
+                        <input type="radio" required name="field"> Employee
+                    </li>
+
+                </ol>
+
+            </div>
+
+            <div>
+
+                <h2>Mobile Usage Questions</h2>
+
+                <ol>
+
+                    <li>
+                        <p>How many hours do you use your mobile daily?</p>
+
+                        <input type="radio" required name="time"> Less than 2hr
+                        <input type="radio" required name="time"> 2hr-4hr
+                        <input type="radio" required name="time"> 4hr-6hr
+                        <input type="radio" required name="time"> More than 6hr
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <p>Which app do you use the most?</p>
+
+                        <input type="checkbox" name="apps" /> Instagram
+                        <input type="checkbox" name="apps" /> Youtube
+                        <input type="checkbox" name="apps" /> Whatsapp
+                        <input type="checkbox" name="apps" /> Snapchat
+                        <input type="checkbox" name="apps" /> Facebook
+                        <input type="checkbox" name="apps" /> LinkedIn
+                        <input type="checkbox" name="apps" /> Gaming Apps
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <p>How often do you check your phone without notifications?</p>
+
+                        <input type="radio" required name="use"> Very Often
+                        <input type="radio" required name="use"> Sometimes
+                        <input type="radio" required name="use"> Rarely
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <p>Do you use your phone immediately after waking up?</p>
+
+                        <input type="radio" required name="wake"> Yes
+                        <input type="radio" required name="wake"> No
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <p>Do you use your phone before sleeping?</p>
+
+                        <input type="radio" required name="sleep"> Always
+                        <input type="radio" required name="sleep"> Sometimes
+                        <input type="radio" required name="sleep"> Never
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <p>What changes would you like to make in your mobile usage habits?</p>
+
+                        <textarea cols="60" rows="3"></textarea>
+                    </li>
+
+                    <br>
+
+                    <li>
+
+                        <p>What do you think about the world without mobile phones?</p>
+
+                        <p contenteditable="">Type here</p>
+
+                    </li>
+
+                </ol>
+
+                <input type="submit" value="Submit">
+
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
