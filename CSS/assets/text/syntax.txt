@@ -1,0 +1,104 @@
+Inline CSS syntax:
+
+1.<h1 style="background-color:black;color:white;height:200px;">
+2.<p style="background-color:blue;color:pink;height:200px;">
+3.<div style="background-color:yellow;color:black;height:200px;">
+4.<h2 style="background-color:pink;color:black;height:200px;">
+5.<h3 style="background-color:black;color:white;height:200px;">
+6.<h4 style="background-color:pink;color:yellow;height:200px;">
+7.<pre style="background-color:pink;color:blue;height:200px;">
+8.<p style="background-color:blue;color:white;height:200px;">
+9.<b style="background-color:pink;color:blue;height:200px;">
+10.<h1 style="background-color:black;color:white;height:200px;">
+11.<h2 style="background-color:yellow;color:blue;height:200px;">
+12.<h3 style="background-color:pink;color:green;height:200px;">
+13.<h4 style="background-color;green;color:pink;height:200px;">
+14.<h5 style="background-color;yellow;color:black;height:200px;">
+15.<h6 style="background-color:green;color:gray;height:200px;">
+16.<p style="background-color:gray;color:blue;height:200px;">
+17.<em style="background-color:yellow;color:brown;height:200px;">
+18.<p style="background-color:pink;color:black;height:300px;">
+19.<b style="background-color:gray;color:blue;height:300px;">
+20.<p style="background-color:pink;color:blue;height:200px;">
+
+
+
+External CSS Syntax:
+1.h1 {
+      background-color:black;
+      color:white;
+      width:200px;
+     }
+2. p {
+      background-color:yellow;
+      color:blue;
+      height:200px;
+     }
+3.h2 {
+      background-color:pink;
+      color:black;
+      width:300px;
+     } 
+4.h1 {
+      background-color:gray;
+      color:blue;
+      height:200px;
+     }
+5.p {
+     background-color:pink;
+     color:black;
+     height:300px;
+    }
+6.p {
+     background-color:white;
+     color:black;
+     height:200px
+     }
+7.h2 {
+      background-color:pink;
+      color:blue;
+      width:200px;
+     }
+8.h1 {
+      background-color:blue;
+      color:pink;
+      height:200px;
+     }
+9.h3 {
+      background-color:black;
+      color:white;
+      height:300px;
+     }
+10.h2 {
+       background-color:black;
+       color:white;
+       height:200px;
+      }
+11.p {
+      background-color:blue;
+      color:pink;
+      height:200px;
+     }
+12.h1 {
+       background-color:pink;
+       color:green;
+       height:300px;
+      }
+13.h1 {
+       background-color:pink;
+       color:blue;
+       width:200px;
+      }
+14.p  {
+       background-color:blue;
+       color:gray;
+       width:300px;
+      }
+15.p {
+      background-color:pink;
+      color:blue;
+      width:200px;
+      }
+
+
+     
