@@ -3,8 +3,79 @@
 
 <head>
     <title>Internal</title>
-     <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        h1 {
+            background-color: azure;
+            color: blueviolet;
+        }
 
+        h2 {
+            background-color: aquamarine;
+            color: blue;
+        }
+        .zero{
+             background-color: rgb(117, 117, 45);
+            color: rgb(3, 31, 31)
+
+        }
+
+        .nine {
+            background-color: beige;
+            color: darkslategrey
+        }
+
+        .one {
+            background-color: rgb(228, 228, 41);
+            color: rgb(1, 1, 77)
+        }
+
+        ul {
+            background-color: rgb(219, 200, 174);
+            color: darkmagenta
+        }
+
+        .two {
+            background-color: rgb(191, 192, 191);
+            color: crimson
+        }
+
+        div {
+            background-color: antiquewhite;
+            color: midnightblue
+        }
+
+        b {
+            background-color: azure;
+            color: blue;
+        }
+
+        .three {
+            background-color: rgb(136, 136, 145);
+            color: mediumblue;
+        }
+
+        .four {
+            background-color: ghostwhite;
+            color: blueviolet;
+        }
+        .five {
+            background-color: rgb(26, 26, 90);
+            color: rgb(115, 115, 116);
+        }
+        .apple{
+            background-color: rgb(50, 50, 68);
+            color: rgb(172, 131, 42);
+
+        }
+        .orange{
+            background-color: rgb(121, 121, 175);
+            color: rgb(4, 39, 24);
+        }
+        .banana{
+            background-color: rgb(19, 19, 128);
+            color: rgb(115, 115, 116);
+        }
+    </style>
 </head>
 
 <body>
@@ -12,11 +83,11 @@
         <h1>CSS</h1>
     </center>
     <h2>What is CSS?</h2>
-    <p class="one">
+    <p class="nine">
         CSS stands for <b>Cascading Style Sheets</b>. CSS is used to design and style HTML webpages. It controls colors,
         fonts, layouts, spacing and visual appearance. HTML creates the structure while CSS improves the presentation.
     </p>
-    <h2 class="heading">The Evolution of CSS</h2>
+    <h2 class="zero">The Evolution of CSS</h2>
     <ul>
         <li>1996: CSS1 released (basic fonts, colors, margins).</li>
         <li>1998: CSS2 released (positioning, z-index, media types for print).</li>
@@ -25,9 +96,9 @@
             layout), Custom Properties (CSS Variables), and Container Queries have turned CSS from a simple styling
             language into a true design tool.</li>
     </ul>
-    <h2 class="head">The Core Concept: "Separation of Concerns"</h2>
+    <h2 class="one">The Core Concept: "Separation of Concerns"</h2>
     <div>
-        <p class="para">CSS was invented to solve a fundamental problem: keeping content and style separate.</p>
+        <p>CSS was invented to solve a fundamental problem: keeping content and style separate.</p>
 
         <p><em>Without CSS :</em> You would have to manually add font, color, and bgcolor attributes to every single
             HTML tag.
@@ -48,44 +119,44 @@
                 create accessible sites for screen readers.</li>
         </ol>
     </div>
-    <h2>How CSS Works</h2>
-    <div>
+    <h2 class="two">Breaking Down "Cascading Style Sheets"</h2>
+    <div class="four">
         <em><b>Cascade:</b></em>
-        <p>
+        <p class="apple">
             The "C" in CSS (Cascading) is its most important and unique feature. The cascade is the algorithm that
             resolves conflicts when multiple CSS rules target the same HTML element.
         </p>
         <em><b>Style:</b></em>
-        <p>The "Style" in CSS refers to the visual presentation rules that transform raw HTML into a designed
+        <p class="orange">The "Style" in CSS refers to the visual presentation rules that transform raw HTML into a designed
             interface.The style categories are Typography,Colors & Backgrounds,Box Model,Layout,Animations,Responsive
             Design.
         </p>
         <em><b>Sheet:</b></em>
-        <p>The "Sheet" in CSS refers to a collection or document of multiple style rules. Think of it like a spreadsheet
+        <p class="banana">The "Sheet" in CSS refers to a collection or document of multiple style rules. Think of it like a spreadsheet
             or a cheat sheet—a single file containing many instructions.</p>
 
 
     </div>
-    <h2>The Three Ways to Apply CSS</h2>
+    <h2 class="three">The Three Ways to Apply CSS</h2>
 
-    <div>
+    <div class="five">
 
         <em><b>External CSS:</b></em>
-        <p>
+        <p class="apple">
             External CSS is the best and most commonly used method for styling websites.
             The CSS code is written in a separate .css file and linked to the HTML document using
             the &lt;link&gt; tag. This method keeps the code clean, reusable, and easy to manage.
         </p>
 
         <em><b>Internal CSS:</b></em>
-        <p>
+        <p class="orange">
             Internal CSS is written inside a &lt;style&gt; tag within the
             &lt;head&gt; section of an HTML document. It is mainly used for
             single-page websites, testing, or quick styling experiments.
         </p>
 
         <em><b>Inline CSS:</b></em>
-        <p>
+        <p class="banana">
             Inline CSS is written directly inside an HTML element using the
             style attribute. It is generally avoided because it makes the code harder
             to maintain, but it can be useful for small changes, emergency overrides, or dynamic styling.

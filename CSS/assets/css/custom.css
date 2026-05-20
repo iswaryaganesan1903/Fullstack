@@ -1,0 +1,71 @@
+h1 {
+            background-color: azure;
+            color: blueviolet;
+        }
+
+        h2 {
+            background-color: aquamarine;
+            color: blue;
+        }
+        .zero{
+             background-color: rgb(117, 117, 45);
+            color: rgb(3, 31, 31)
+
+        }
+
+        .nine {
+            background-color: beige;
+            color: darkslategrey
+        }
+
+        .one {
+            background-color: rgb(228, 228, 41);
+            color: rgb(1, 1, 77)
+        }
+
+        ul {
+            background-color: rgb(219, 200, 174);
+            color: darkmagenta
+        }
+
+        .two {
+            background-color: rgb(191, 192, 191);
+            color: crimson
+        }
+
+        div {
+            background-color: antiquewhite;
+            color: midnightblue
+        }
+
+        b {
+            background-color: azure;
+            color: blue;
+        }
+
+        .three {
+            background-color: rgb(136, 136, 145);
+            color: mediumblue;
+        }
+
+        .four {
+            background-color: ghostwhite;
+            color: blueviolet;
+        }
+        .five {
+            background-color: rgb(26, 26, 90);
+            color: rgb(115, 115, 116);
+        }
+        .apple{
+            background-color: rgb(50, 50, 68);
+            color: rgb(172, 131, 42);
+
+        }
+        .orange{
+            background-color: rgb(121, 121, 175);
+            color: rgb(4, 39, 24);
+        }
+        .banana{
+            background-color: rgb(19, 19, 128);
+            color: rgb(115, 115, 116);
+        }

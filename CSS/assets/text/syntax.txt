@@ -24,6 +24,7 @@ Inline CSS syntax:
 
 
 External CSS Syntax:
+
 1.h1 {
       background-color:black;
       color:white;
