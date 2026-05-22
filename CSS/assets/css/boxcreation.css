@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.parent {
+    background-color:blueviolet;
+    padding: 50px;
+}
+
+.child-one{
+    background-color: rgb(139, 25, 25);
+    color: rgb(201, 201, 37);
+    padding: 20px;
+}
+.child-two {
+
+    background-color: rgb(1, 51, 20);
+    color: rgb(209, 209, 30);
+    padding: 20px;
+    margin-top: 10px;
+
+}
+
+
+.grandchild-one{
+
+    background-color: rgb(161, 19, 86);
+    color: rgb(9, 12, 0);
+    padding: 20px;
+    text-align: center;
+
+}
+
+
+.para {
+    padding: 10px;
+    background-color: rgb(255, 254, 254);
+    color: black;
+    text-align: start;
+}
+
+.sub {
+    
+    background-color: rgb(51, 19, 104);
+    padding: 5px;
+    margin: 10px;
+    color: red;
+    font-size: 20px;
+    text-align: end;
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

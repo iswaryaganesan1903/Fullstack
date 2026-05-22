@@ -1,0 +1,32 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.parent{
+    background:black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 10px;
+    
+
+
+}
+.dis{
+    background-color: blue;
+    color: bisque;
+    height: 200px;
+    width:200px;
+
+}
+.para{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+
+
+}
