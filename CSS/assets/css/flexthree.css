@@ -1,0 +1,31 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.navbar{
+    display:flex;
+    justify-content:center;
+    align-items:start;
+    gap: 20px;
+}
+    
+
+
+
+.logo{
+    background-color: bisque;
+    padding: 10px;
+    display:flex;  
+
+}
+.menu{
+    background-color:cornsilk;
+     padding: 10px;
+    display:flex;  
+    gap: 20px;
+
+
+
+}
