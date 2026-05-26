@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+input{
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.parent{
+    display: flex;
+    justify-content:space-between;
+     box-shadow:-6px -10px 10px 3px #040404;
+   
+}
+.navbar{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 35px;
+    font-size:14px;
+   
+
+}
+.log{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 15px;
+    padding-right: 10px;
+
+}
+.login{
+ border: none;
+}
+.signup{
+    border-radius: 5px;
+    padding:8px;
+
+}
+.main{
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:30px;
+    gap: 50px;
+    margin-top: 100px;
+
+
+}
+.main button{
+
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    background-color: #0d99ff;
+    margin-top: 20px;
+    
+
+}
+.one{
+    margin-left:60px ;
+    margin-right:70px;
+}
+.two{
+   
+    margin-right: 60px;
+}
+.two img{
+ border-radius: 10px;
+}
+.one h2{
+   margin-top: 10px;
+}
+.users{
+    margin-top: 10px;
+}
+.users a{
+     font-size: 13px; 
+    color: gray;
+}
