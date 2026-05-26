@@ -24,6 +24,8 @@
     width: 620px;
     height: 45px;
     border-radius: 25px;
+    padding: 10px;
+    border:none;
 }
 
 .ref {
