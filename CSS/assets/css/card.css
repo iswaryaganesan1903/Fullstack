@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+input{
+    outline: none;
+}
+.parent{
+    background-color:antiquewhite;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+}
+.parent-one{
+background-color:white ;
+color:black;
+padding:20px;
+display: grid;
+grid-template-columns:300px 1fr;
+border-radius: 20px;
+}
+.right{
+   margin-left:5px;
+   margin-top: 55px;
+
+}
+.left{
+    padding:20px
+}
+.right p,button{
+    font-size: 15px;
+    margin-top: 10px;
+}
+.right button{
+    background-color: orangered;
+    border-radius: 5px;
+    padding: 5px;
+    color: aliceblue;
+    border: none;
+}
+.left img{
+    margin-top: 20px;
+}
