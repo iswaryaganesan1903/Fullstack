@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+.parent{
+    background-color: rgb(236, 222, 243);
+    width: 100vw;
+    height: 100vh;
+    padding: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    background-color: white;
+    color: black;
+    height:300px;
+    width:400px;
+    padding:20px; 
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.clear{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    transition: transform 0.5s ease-in;
+}
+.one{
+    width: 70px;
+    height:30px;
+    padding:2px;
+}
+.two{
+    width: 70px;
+    height:30px;
+    padding:2px;
+}
+.clear button{
+    border: none;
+    background-color: rgb(151, 131, 190);
+    border-radius: 5px;
+}
+.clear button:hover{
+   transform: scale(1.1);
+   background-color: rgb(187, 64, 248);
+}
