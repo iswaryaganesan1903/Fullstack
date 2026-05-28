@@ -1,0 +1,103 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+   
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+section{
+    min-height: 100hv;
+}
+a{
+   text-decoration: none;
+   color:white;
+}
+.navbar{
+    background-color:rgb(26, 32, 65);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; 
+    
+}
+.start{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin-left: 50px;
+    
+}
+.option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+   
+}
+.start a{
+   border: 1px dotted;
+   border-radius: 3px;
+   padding: 2px;
+   
+}
+.option select{
+     background-color:rgb(26, 32, 65);
+     padding:5px;
+     color:white;
+     border-radius: 5px;
+
+}
+.course{
+    background-color:rgb(26, 32, 65);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content:start; 
+    
+    
+}
+.course a{
+    margin-left: 60px;
+}
+.parent{
+    background-color: rgb(243, 241, 241);
+    width: 100vw;
+    height: 100vh;
+    padding: 30px;
+}
+.parent-one{
+background-color:white ;
+color:black;
+padding:20px;
+display: grid;
+grid-template-columns:300px 1fr;
+border-radius: 20px;
+}
+.right{
+   margin-left:5px;
+   margin-top: 55px;
+
+}
+.left{
+    padding:20px
+}
+.right p,button{
+    font-size: 15px;
+    margin-top: 10px;
+}
+.right button{
+    background-color: orangered;
+    border-radius: 5px;
+    padding: 5px;
+    color: aliceblue;
+    border: none;
+}
+.left img{
+    margin-top: 20px;
+}
