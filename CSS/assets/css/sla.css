@@ -79,7 +79,7 @@ section {
 .parent {
     background-color: rgb(235, 224, 224);
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
     padding: 30px;
 
 }
@@ -145,4 +145,46 @@ button {
 
 .left img {
     margin-top: 20px;
+}
+.parent-three{
+    background-color: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.final{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-top: 30px;
+}
+
+.left-one{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.middle{
+    border-left: 1px solid lightgray;
+    padding-left: 40px;
+}
+
+.right-one{
+    border-left: 1px solid lightgray;
+    padding-left: 40px;
+}
+
+.parent-three a{
+    text-decoration: none;
+    color: blue;
+}
+
+.trainer p,
+.middle p{
+    margin-top: 5px;
+}
+.parent-three h3{
+    margin-bottom: 20px;
 }
