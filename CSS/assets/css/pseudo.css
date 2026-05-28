@@ -1,0 +1,33 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+   
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+.parent{
+    background-color: ivory;
+    padding:20px;
+}
+.one{
+    padding: 20px;
+}
+.two{
+    padding: 20px;
+}
+.one :hover{
+    background-color: azure;
+    color: black;
+   
+
+}
+.two :focus{
+    background-color: aqua;
+    color: black;
+   
+}
