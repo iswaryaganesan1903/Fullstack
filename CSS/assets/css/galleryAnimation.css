@@ -1,0 +1,112 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+img{
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+}
+h1{
+    background-color: darksalmon;
+}
+
+.parent{
+    width: 100%;
+    background-color:antiquewhite;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    place-items: center;
+    padding:40px;
+    gap:30px;
+   
+}
+.child{
+  
+    background-color:floralwhite;
+    opacity: 10px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+}
+/* IMAGE ZOOM + SMOOTH TRANSITION */
+
+.child img{
+    transition: 0.5s ease;
+}
+
+.child:hover img{
+    transform: scale(1.1);
+}
+
+
+/* OVERLAY EFFECT */
+
+.child{
+    position: relative;
+    overflow: hidden;
+}
+
+.child::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(151, 89, 180, 0.4);
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.child:hover::after{
+    opacity: 1;
+}
+
+
+/* PSEUDO ELEMENT BORDER EFFECT */
+
+.child::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 2px solid rgb(123, 43, 148);
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+    
+}
+
+.child:hover::before{
+    opacity: 1;
+}
+
+
+/* TEXT STYLE */
+
+.child p{
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.child:hover p{
+    transform: scale(1.1);
+}
