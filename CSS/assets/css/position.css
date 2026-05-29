@@ -1,0 +1,35 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+img{
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+}
+h1{
+    background-color: darksalmon;
+}
+
+.parent{
+    
+    background-color:antiquewhite;
+    padding:40px;
+    
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+.child{
+    
+
+}
