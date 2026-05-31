@@ -25,11 +25,516 @@
 
         </ul>
         <h2>What are the three types of CSS?</h2>
+        <ol>
+            <strong>
+                <li>Inline CSS</li>
+            </strong>
+            <p>Inline CSS is written directly inside an HTML element using the
+                style attribute.
+            </p>
+            <p><strong>Syntax:</strong> &lt;tagname style="property: value;"&gt;</p>
+            <strong>
+                <li>Internal CSS</li>
+            </strong>
+            <p>
+                Internal CSS is written inside a &lt;style&gt; tag within the
+                &lt;head&gt; section of an HTML document. It is mainly used for
+                single-page websites, testing, or quick styling experiments.
+            </p>
+            <p><strong>Syntax:</strong> &lt;style&gt; selector { property: value; } &lt;/style&gt;</p>
+            <strong>
+                <li>External CSS</li>
+            </strong>
+            <p>
+                External CSS is the best and most commonly used method for styling websites.
+                The CSS code is written in a separate .css file and linked to the HTML document using
+                the &lt;link&gt; tag. This method keeps the code clean, reusable, and easy to manage.
+            </p>
+            <p><strong>Syntax:</strong> &lt;link rel="stylesheet" href="filename.css"&gt;</p>
+            <p><strong>CSS File Syntax:</strong> selector { property: value; }</p>
+        </ol>
+        <h2>What are CSS Selectors?</h2>
+
         <ul>
-            <li>Inline CSS</li>
-            <li>Internal CSS</li>
-            <li>External CSS</li>
+            <li>
+                CSS selectors are used to select HTML elements and apply styles to them.
+            </li>
+            <li>
+                They help the browser identify which elements should be styled according to the CSS rules.
+            </li>
         </ul>
+
+        <ol>
+            <strong>
+                <li>Universal Selector (*)</li>
+            </strong>
+            <p>
+                The universal selector selects all HTML elements on a web page.
+            </p>
+            <p><strong>Syntax:</strong> * { property: value; }</p>
+
+            <strong>
+                <li>Element Selector</li>
+            </strong>
+            <p>
+                The element selector selects all elements of a specific HTML tag.
+            </p>
+            <p><strong>Syntax:</strong> tagname { property: value; }</p>
+
+            <strong>
+                <li>Class Selector (.)</li>
+            </strong>
+            <p>
+                The class selector selects elements with a specific class attribute.
+                A class can be used on multiple elements.
+            </p>
+            <p><strong>Syntax:</strong> .classname { property: value; }</p>
+
+            <strong>
+                <li>ID Selector (#)</li>
+            </strong>
+            <p>
+                The ID selector selects an element with a specific ID attribute.
+                An ID should be unique within a page.
+            </p>
+            <p><strong>Syntax:</strong> #idname { property: value; }</p>
+
+            <strong>
+                <li>Group Selector (,)</li>
+            </strong>
+            <p>
+                The group selector is used to apply the same styles to multiple elements.
+            </p>
+            <p><strong>Syntax:</strong> selector1, selector2 { property: value; }</p>
+
+            <strong>
+                <li>Descendant Selector (space)</li>
+            </strong>
+            <p>
+                The descendant selector selects elements that are inside another element.
+            </p>
+            <p><strong>Syntax:</strong> parent child { property: value; }</p>
+
+            <strong>
+                <li>Child Selector (>)</li>
+            </strong>
+            <p>
+                The child selector selects only direct child elements of a parent element.
+            </p>
+            <p><strong>Syntax:</strong> parent > child { property: value; }</p>
+        </ol>
+        <h2>What is cascading?</h2>
+        <p>
+            Multiple style can apply to same element and browser decides which style should be win.
+        </p>
+        <h2>CSS priority order:</h2>
+        <p>Inline style>Id selector>Class selector>Element selector>Universal selector</p>
+        <h2>What is specifity?</h2>
+        <p>
+            Specificity is priority calculation system used by browser to determine which CSS should apply,
+            when multiple styles or rules targeted same element.
+        </p>
+        <h2>CSS Specificity Priority Table</h2>
+
+        <table border="1">
+            <tr>
+                <th>Selector Type</th>
+                <th>Specificity Score</th>
+            </tr>
+
+            <tr>
+                <td>!important</td>
+                <td>Highest Priority</td>
+            </tr>
+
+            <tr>
+                <td>Inline Style</td>
+                <td>1000</td>
+            </tr>
+
+            <tr>
+                <td>ID Selector</td>
+                <td>100</td>
+            </tr>
+
+            <tr>
+                <td>Class Selector</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <td>Attribute Selector</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <td>Pseudo-class</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <td>Element Selector</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td>Pseudo-element</td>
+                <td>1</td>
+            </tr>
+
+            <tr>
+                <td>Universal Selector</td>
+                <td>0</td>
+            </tr>
+        </table>
+        <h2>What is Box model?</h2>
+        <p>
+            It is a core method to handle the layout and design.
+        </p>
+        <p>They have four parts:</p>
+        <ul>
+            <li>Content</li>
+            <li>Padding</li>
+            <li>Border</li>
+            <li>Margin</li>
+        </ul>
+        <p>These are the four pillars of box model.</p>
+        <ol>
+            <strong>
+                <li>Content:</li>
+            </strong>
+            <p>
+                The content area is the innermost part of an element where the actual information, such as text, images,
+                videos, or other HTML elements, is displayed. By default, the width and height properties in CSS apply
+                to the content area.
+            </p>
+            <strong>
+                <li>Padding:</li>
+            </strong>
+            <p>
+                Padding is the space between the content and the border. It creates inner spacing within an element,
+                making the content appear less crowded. Padding increases the visible size of the element and can be
+                applied individually to the top, right, bottom, and left sides.
+            </p>
+            <strong>
+                <li>Border:</li>
+            </strong>
+            <p>The border is a line that surrounds the content and padding. It helps define the boundaries of an element
+                and can be customized with different widths, styles, and colors. Borders are commonly used to highlight
+                or separate elements on a webpage.
+            </p>
+            <strong>
+                <li>Margin:</li>
+            </strong>
+            <p>
+                Margin is the outermost space around an element, outside the border. It creates distance between the
+                element and neighboring elements, helping to improve layout and readability. Unlike padding, margins do
+                not affect the element's background color and are always transparent.
+            </p>
+
+
+        </ol>
+        <h2>What is flex?</h2>
+        <p>Flex is a one dimentional layout,it works row or column to make a responsive webpage layout and flex is
+            helping to split the webpages and align the content row wise or column wise.Flex is the most used layout
+            systemin CSS.
+            Flex and grids are values not a property .These are comes under display property.
+        </p>
+        <h2>What are CSS Units?</h2>
+        <p>
+            CSS units are ued to define the size of element used to text,space,width,height,margin,border,padding
+            and layout inside a webpage.
+        </p>
+        <ol>
+            <strong>
+                <li>Pixel(px):</li>
+            </strong>
+            <p>
+                Pixels are a mostly and commonly used in CSS.These are fixed and absolute unit.It is easily
+                understandable but should not be responsive.
+            </p>
+            <strong>
+                <li>Percentage(%):</li>
+            </strong>
+            <p>
+                It is a relative unit and changeable.It should works upon by parent elements.
+            </p>
+            <strong>
+                <li>em</li>
+            </strong>
+            <p>
+                It is a relative unit based on the font-size of the parent.It is only used for text.
+            </p>
+            <strong>
+                <li>rem</li>
+            </strong>
+            <p>
+                It is works based on Root element.
+            </p>
+        </ol>
+        <h2>What is Coloring in CSS?</h2>
+        <p>
+            Coloring in CSS is used to apply colors to text, backgrounds, borders, and other elements on a webpage.
+            It helps improve the appearance, readability, and user experience of a website.
+        </p>
+
+        <p>CSS provides different types of color values:</p>
+
+        <ol>
+            <strong>
+                <li>Color Names:</li>
+            </strong>
+            <p>
+                CSS supports predefined color names such as red, blue, green, yellow, black, and white.
+                These names can be directly used to apply colors to elements.
+            </p>
+
+            <strong>
+                <li>HEX Colors:</li>
+            </strong>
+            <p>
+                HEX (Hexadecimal) colors are represented using a hash symbol (#) followed by six
+                hexadecimal characters. They define the intensity of red, green, and blue colors.
+            </p>
+
+            <strong>
+                <li>RGB Colors:</li>
+            </strong>
+            <p>
+                RGB stands for Red, Green, and Blue. Each color value ranges from 0 to 255,
+                allowing a wide range of color combinations.
+            </p>
+
+            <strong>
+                <li>RGBA Colors:</li>
+            </strong>
+            <p>
+                RGBA is similar to RGB but includes an Alpha value that controls transparency.
+                The alpha value ranges from 0 (fully transparent) to 1 (fully visible).
+            </p>
+            <h2>What is Grid?</h2>
+            <p>
+                It is a two dimentional layout.We can design row wise and column wise layout and we can create a
+                complex,responsive layout using grid.Mainly we used grid for dashboard layouts,webites,sections,card
+                design and gallery layout.
+            </p>
+            <h2>Pseudo Classes</h2>
+
+            <p>
+                A Pseudo Class is used to define the special state of an element. It is
+                represented using a single colon (:). Pseudo Classes are commonly used for
+                user interactions such as hovering, focusing, or selecting elements.
+            </p>
+
+            <ol>
+                <strong>
+                    <li>:hover</li>
+                </strong>
+                <p>
+                    Applies styles when the user places the mouse pointer over an element.
+                </p>
+
+                <strong>
+                    <li>:active</li>
+                </strong>
+                <p>
+                    Applies styles when an element is being clicked by the user.
+                </p>
+
+                <strong>
+                    <li>:focus</li>
+                </strong>
+                <p>
+                    Applies styles when an input field or form element receives focus.
+                </p>
+
+                <strong>
+                    <li>:visited</li>
+                </strong>
+                <p>
+                    Applies styles to links that have already been visited by the user.
+                </p>
+            </ol>
+
+            <h2>Pseudo Elements</h2>
+
+            <p>
+                A Pseudo Element is used to style a specific part of an element. It is
+                represented using a double colon (::). Pseudo Elements allow styling of
+                content that is not directly present in the HTML.
+            </p>
+
+            <ol>
+                <strong>
+                    <li>::before</li>
+                </strong>
+                <p>
+                    Inserts content before the actual content of an element.
+                </p>
+
+                <strong>
+                    <li>::after</li>
+                </strong>
+                <p>
+                    Inserts content after the actual content of an element.
+                </p>
+
+                <strong>
+                    <li>::first-letter</li>
+                </strong>
+                <p>
+                    Styles only the first letter of an element's content.
+                </p>
+
+                <strong>
+                    <li>::first-line</li>
+                </strong>
+                <p>
+                    Styles only the first line of an element's content.
+                </p>
+            </ol>
+            <h2>What is Position in CSS?</h2>
+
+            <p>
+                The position property in CSS is used to control how an element is placed on a webpage.
+                It helps developers arrange elements at specific locations relative to their normal
+                position, parent element, or browser window.
+            </p>
+
+            <p>Types of Position in CSS:</p>
+
+            <ol>
+                <strong>
+                    <li>Static:</li>
+                </strong>
+                <p>
+                    Static is the default position value for all HTML elements. Elements are displayed
+                    in the normal document flow, and properties like top, right, bottom, and left do not work.
+                </p>
+
+                <strong>
+                    <li>Relative:</li>
+                </strong>
+                <p>
+                    Relative positioning moves an element from its original position without affecting
+                    the layout of surrounding elements. It works with top, right, bottom, and left properties.
+                </p>
+
+                <strong>
+                    <li>Absolute:</li>
+                </strong>
+                <p>
+                    Absolute positioning removes the element from the normal document flow and positions
+                    it relative to its nearest positioned parent element.
+                </p>
+
+                <strong>
+                    <li>Fixed:</li>
+                </strong>
+                <p>
+                    Fixed positioning places an element relative to the browser window. The element
+                    remains in the same position even when the page is scrolled.
+                </p>
+
+                <strong>
+                    <li>Sticky:</li>
+                </strong>
+                <p>
+                    Sticky positioning combines the behavior of relative and fixed positioning. The
+                    element behaves like relative until a specified scroll position is reached, then
+                    it becomes fixed.
+                </p>
+            </ol>
+
+            <h2>What are Media Queries?</h2>
+
+            <p>
+                Media Queries are a feature in CSS used to make webpages responsive. They allow
+                developers to apply different styles based on the screen size, device type, or
+                screen resolution.
+            </p>
+
+            <p>
+                Media Queries help websites look good on desktops, laptops, tablets, and mobile phones
+                by adjusting layouts, font sizes, images, and other design elements according to the
+                available screen space.
+            </p>
+
+            <p>Common Types of Media Queries:</p>
+
+            <ol>
+                <strong>
+                    <li>max-width:</li>
+                </strong>
+                <p>
+                    Applies styles when the screen width is less than or equal to a specified value.
+                    It is commonly used for mobile and tablet devices.
+                </p>
+
+                <strong>
+                    <li>min-width:</li>
+                </strong>
+                <p>
+                    Applies styles when the screen width is greater than or equal to a specified value.
+                    It is commonly used for larger screens.
+                </p>
+
+                <strong>
+                    <li>Orientation:</li>
+                </strong>
+                <p>
+                    Applies styles based on the device orientation, such as portrait or landscape mode.
+                </p>
+            </ol>
+
+            <p>
+                In simple terms, the Position property controls where elements appear on a webpage,
+                while Media Queries help create responsive designs that adapt to different screen sizes.
+            </p>
+            <h2>What is the Difference Between CSS and CSS3?</h2>
+            <table border="1">
+                <tr>
+                    <th>CSS</th>
+                    <th>CSS 3</th>
+                </tr>
+
+                <tr>
+                    <td>Older version of CSS.</td>
+                    <td>Latest and improved version of CSS.</td>
+                </tr>
+
+                <tr>
+                    <td>Limited design and animation features.</td>
+                    <td>Provides advanced animations and transitions.</td>
+                </tr>
+
+                <tr>
+                    <td>Does not support media queries.</td>
+                    <td>Supports media queries for responsive design.</td>
+                </tr>
+
+                <tr>
+                    <td>Basic color formats such as color names, HEX, and RGB.</td>
+                    <td>Introduces RGBA, HSL, and HSLA color formats.</td>
+                </tr>
+
+                <tr>
+                    <td>No support for flexible layouts.</td>
+                    <td>Supports Flexbox and Grid layouts.</td>
+                </tr>
+
+                <tr>
+                    <td>Limited border and background styling options.</td>
+                    <td>Provides border-radius, box-shadow, gradients, and multiple backgrounds.</td>
+                </tr>
+
+                <tr>
+                    <td>Developed as a single large specification.</td>
+                    <td>Divided into separate modules for easier development and updates.</td>
+                </tr>
+            </table>
+
+
     </div>
 </body>
 
