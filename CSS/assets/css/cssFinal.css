@@ -38,6 +38,57 @@ table{
 .parent{
     background-color: rgb(252, 230, 242);
 
-    padding: 20px;
+    padding: 40px;
   
+}
+.one:hover{
+    background-color: rgb(236, 126, 218);
+}
+.two:hover{
+    background-color: rgb(236, 126, 218);
+}
+.three:hover{
+    background-color: rgb(236, 126, 218);
+}
+.four:hover{
+    background-color: rgb(236, 126, 218);
+}
+.five:hover{
+    background-color: rgb(236, 126, 218);
+}
+.six:hover{
+    background-color: rgb(236, 126, 218);
+}
+.seven:hover{
+    background-color: rgb(236, 126, 218);
+}
+.eight:hover{
+    background-color: rgb(236, 126, 218);
+}
+.nine:hover{
+    background-color: rgb(236, 126, 218);
+}
+.ten:hover{
+    background-color: rgb(236, 126, 218);
+}
+.eleven:hover{
+    background-color: rgb(236, 126, 218);
+}
+.twelve:hover{
+    background-color: rgb(236, 126, 218);
+}
+.thirteen:hover{
+    background-color: rgb(236, 126, 218);
+}
+.fourteen:hover{
+    background-color: rgb(236, 126, 218);
+}
+.fifteen:hover{
+    background-color: rgb(236, 126, 218);
+}
+.sixteen:hover{
+    background-color: rgb(236, 126, 218);
+}
+.seventeen:hover{
+    background-color: rgb(236, 126, 218);
 }
