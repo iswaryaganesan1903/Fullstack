@@ -1,0 +1,15 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.parent{
+    background-color: antiquewhite;
+    display:grid;
+    width:100vh;
+    gap: 5px;
+    grid-template-columns: repeat(3,1fr);
+}
+.child{
+    background-color: rgb(233, 200, 250);
+}
