@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GM Hospital</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-200 w-full h-full">
+    <header class="bg-white shadow-md px-6 py-4 flex justify-between items-center">
+        <div>
+            <h1 class="text-2xl font-bold text-slate-800">
+                🏥 Hospital Management Dashboard
+            </h1>
+        </div>
+        <nav>
+            <ul class="flex gap-6 font-medium text-slate-700">
+                <li><a href="#" class="hover:text-blue-600">Dashboard</a></li>
+                <li><a href="#" class="hover:text-blue-600">Patients</a></li>
+                <li><a href="#" class="hover:text-blue-600">Doctors</a></li>
+                <li><a href="#" class="hover:text-blue-600">Appointments</a></li>
+                <li><a href="#" class="hover:text-blue-600">Reports</a></li>
+                <li><a href="#" class="hover:text-blue-600">Settings</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section class="flex">
+        <div class="bg-slate-800 text-white w-64 min-h-screen p-6">
+            <h2 class="text-2xl font-bold mb-8">🏥 Hospital Dashboard</h2>
+
+            <nav>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="#" class="block  rounded-lg hover:bg-slate-700 transition">
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="block rounded-lg hover:bg-slate-700 transition">
+                            Patients
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="block rounded-lg hover:bg-slate-700 transition">
+                            Doctors
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="block rounded-lg hover:bg-slate-700 transition">
+                            Appointments
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="block rounded-lg hover:bg-slate-700 transition">
+                            Reports
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="block rounded-lg hover:bg-slate-700 transition">
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="grid-rows-2">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6 p-6">
+                <div class="bg-white p-6 w-60 h-40 rounded-xl shadow-md">
+                    <h3 class="text-gray-500 font-medium">Total Doctors</h3>
+                    <h2 class="text-3xl font-bold mt-3">120</h2>
+                    <p class="text-green-600 text-sm mt-2">+5 this month</p>
+                    <p class="text-gray-500 text-sm">95 on duty today</p>
+                </div>
+                <div class="bg-white p-6  w-60 h-40 rounded-xl shadow-md">
+                    <h3 class="text-gray-500 font-medium">Total Patients</h3>
+                    <h2 class="text-3xl font-bold mt-3">2,450</h2>
+                    <p class="text-green-600 text-sm mt-2">+120 this week</p>
+                    <p class="text-gray-500 text-sm">620 currently admitted</p>
+                </div>
+                <div class="bg-white p-6 w-60 h-40 rounded-xl shadow-md">
+                    <h3 class="text-gray-500 font-medium">Appointments Today</h3>
+                    <h2 class="text-3xl font-bold mt-3">185</h2>
+                    <p class="text-blue-600 text-sm mt-2">120 completed</p>
+                    <p class="text-gray-500 text-sm">50 pending</p>
+                </div>
+                <div class="bg-white p-6 w-60 h-40 rounded-xl shadow-md">
+                    <h3 class="text-gray-500 font-medium">Emergency Cases</h3>
+                    <h2 class="text-3xl font-bold mt-3">15</h2>
+                    <p class="text-red-600 text-sm mt-2">3 critical cases</p>
+                    <p class="text-gray-500 text-sm">8 ambulances available</p>
+                </div>
+
+            </div>
+            <!-- Recent Patients Table -->
+            <div class=" p-6 rounded-xl shadow-md mt-8 overflow-x-auto">
+
+                <h2 class="text-2xl font-semibold mb-4">Recent Patients</h2>
+
+                <table class="w-full bg-white  rounded-xl  border ">
+                    <thead>
+                        <tr class=" border-b text-left">
+                            <th class=" border p-3">Patient ID</th>
+                            <th class="border p-3">Name</th>
+                            <th class="border p-3">Doctor</th>
+                            <th class="border p-3">Department</th>
+                            <th class="border p-3">Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="border p-3">P101</td>
+                            <td class="border p-3">Arun Kumar</td>
+                            <td class="border p-3">Dr. Ravi</td>
+                            <td class="border p-3">Cardiology</td>
+                            <td class="border p-3 text-green-600 font-medium">Admitted</td>
+                        </tr>
+
+                        <tr class="border-b">
+                            <td class="border p-3">P102</td>
+                            <td class="border p-3">Priya</td>
+                            <td class="border p-3">Dr. Meena</td>
+                            <td class="border p-3">Neurology</td>
+                            <td class="border p-3 text-blue-600 font-medium">Discharged</td>
+                        </tr>
+
+                        <tr class="border-b">
+                            <td class="border p-3">P103</td>
+                            <td class="border p-3">Karthik</td>
+                            <td class="border p-3">Dr. Raj</td>
+                            <td class="border p-3">Orthopedics</td>
+                            <td class="border p-3 text-green-600 font-medium">Admitted</td>
+                        </tr>
+
+                        <tr class="border-b">
+                            <td class="border p-3">P104</td>
+                            <td class="border p-3">Meena</td>
+                            <td class="border p-3">Dr. Anitha</td>
+                            <td class="border p-3">Pediatrics</td>
+                            <td class="border p-3 text-yellow-600 font-medium">Under Observation</td>
+                        </tr>
+
+                        <tr>
+                            <td class="border p-3">P105</td>
+                            <td class="border p-3">Ramesh</td>
+                            <td class="border p-3">Dr. Ravi</td>
+                            <td class="border p-3">Cardiology</td>
+                            <td class="border p-3 text-red-600 font-medium">Critical</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
