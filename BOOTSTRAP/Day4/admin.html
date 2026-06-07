@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex flex-col md:flex-row min-h-screen">
+        <div class="bg-slate-800 text-white w-full md:w-64 p-6">
+            <h2 class="text-2xl font-bold mb-6">Admin Panel</h2>
+
+            <ul class="space-y-4">
+                <li class="hover:text-blue-300 cursor-pointer">Dashboard</li>
+                <li class="hover:text-blue-300 cursor-pointer">Users</li>
+                <li class="hover:text-blue-300 cursor-pointer">Courses</li>
+                <li class="hover:text-blue-300 cursor-pointer">Reports</li>
+                <li class="hover:text-blue-300 cursor-pointer">Settings</li>
+            </ul>
+        </div>
+
+        <main class="flex-1 p-6">
+
+            <div class="mb-6">
+                <h1 class="text-3xl font-bold">Admin Dashboard</h1>
+                <p class="text-gray-600">
+                    Manage users, courses and reports.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-gray-500">Total Users</h3>
+                    <h2 class="text-3xl font-bold mt-2">1,250</h2>
+                    <p class="text-green-600 text-sm">+50 this month</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-gray-500">Active Courses</h3>
+                    <h2 class="text-3xl font-bold mt-2">48</h2>
+                    <p class="text-blue-600 text-sm">8 new courses</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-gray-500">Enrollments</h3>
+                    <h2 class="text-3xl font-bold mt-2">3,875</h2>
+                    <p class="text-purple-600 text-sm">120 this week</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-gray-500">Revenue</h3>
+                    <h2 class="text-3xl font-bold mt-2">₹2,45,000</h2>
+                    <p class="text-green-600 text-sm">This month</p>
+                </div>
+
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-md mt-8 overflow-x-auto">
+
+                <h2 class="text-xl font-bold mb-4">
+                    Recent Users
+                </h2>
+
+                <table class="w-full border border-gray-300">
+
+                    <thead class="bg-gray-100">
+
+                        <tr>
+                            <th class="border border-gray-300 p-3">User ID</th>
+                            <th class="border border-gray-300 p-3">Name</th>
+                            <th class="border border-gray-300 p-3">Email</th>
+                            <th class="border border-gray-300 p-3">Course</th>
+                            <th class="border border-gray-300 p-3">Status</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td class="border border-gray-300 p-3">U101</td>
+                            <td class="border border-gray-300 p-3">John Smith</td>
+                            <td class="border border-gray-300 p-3">john@email.com</td>
+                            <td class="border border-gray-300 p-3">Java Full Stack</td>
+                            <td class="border border-gray-300 p-3 text-green-600">Active</td>
+                        </tr>
+
+                        <tr>
+                            <td class="border border-gray-300 p-3">U102</td>
+                            <td class="border border-gray-300 p-3">Sarah Lee</td>
+                            <td class="border border-gray-300 p-3">sarah@email.com</td>
+                            <td class="border border-gray-300 p-3">Python Full Stack</td>
+                            <td class="border border-gray-300 p-3 text-green-600">Active</td>
+                        </tr>
+
+                        <tr>
+                            <td class="border border-gray-300 p-3">U103</td>
+                            <td class="border border-gray-300 p-3">Michael</td>
+                            <td class="border border-gray-300 p-3">mike@email.com</td>
+                            <td class="border border-gray-300 p-3">MERN Stack</td>
+                            <td class="border border-gray-300 p-3 text-yellow-600">Pending</td>
+                        </tr>
+
+                        <tr>
+                            <td class="border border-gray-300 p-3">U104</td>
+                            <td class="border border-gray-300 p-3">Emma</td>
+                            <td class="border border-gray-300 p-3">emma@email.com</td>
+                            <td class="border border-gray-300 p-3">Data Analytics</td>
+                            <td class="border border-gray-300 p-3 text-green-600">Active</td>
+                        </tr>
+
+                        <tr>
+                            <td class="border border-gray-300 p-3">U105</td>
+                            <td class="border border-gray-300 p-3">David</td>
+                            <td class="border border-gray-300 p-3">david@email.com</td>
+                            <td class="border border-gray-300 p-3">Cloud Computing</td>
+                            <td class="border border-gray-300 p-3 text-red-600">Inactive</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-md mt-8">
+
+                <h2 class="text-xl font-bold mb-4">
+                    Course Enrollment Analytics
+                </h2>
+
+                <div class="h-64 border-2 border-dashed border-gray-300 flex items-center justify-center text-gray-500">
+                    Chart Placeholder
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

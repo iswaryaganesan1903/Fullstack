@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GM Market</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100">
+    <nav class="bg-blue-600 text-white px-6 py-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <h1 class="text-2xl font-bold">GM Market</h1>
+            <input
+                type="text"
+                placeholder="Search products..."
+                class="bg-white text-black px-4 py-2 rounded-lg w-full md:w-80 outline-none"
+            >
+            <select class="bg-white text-black px-4 py-2 rounded-lg">
+                <option>All Categories</option>
+                <option>Electronics</option>
+                <option>Fashion</option>
+                <option>Books</option>
+                <option>Sports</option>
+            </select>
+            <button class="bg-yellow-400 text-black px-5 py-2 rounded-lg font-semibold hover:bg-yellow-500">
+                🛒 Cart
+            </button>
+
+        </div>
+    </nav>
+    <section class="max-w-7xl mx-auto px-4 py-10">
+
+        <h2 class="text-3xl font-bold text-center mb-8">
+            Featured Products
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+
+                <div class="overflow-hidden">
+                    <img
+                        src="../assets/images/market/phone.jpg"
+                        class="w-full h-56 object-cover hover:scale-110 transition duration-500"
+                    >
+                </div>
+
+                <div class="p-5">
+                    <h3 class="font-bold text-lg">Smart Phone</h3>
+                    <p class="text-green-600 text-xl font-semibold mt-2">₹24,999</p>
+                   <p class="mt-2 text-gray-700"> Rating: 4.8/5</p>
+                    <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+                        Add To Cart
+                    </button>
+                </div>
+
+            </div>
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+
+                <div class="overflow-hidden">
+                    <img
+                        src="../assets/images/market/watch.jpg"
+                        class="w-full h-56 object-cover hover:scale-110 transition duration-500"
+                    >
+                </div>
+
+                <div class="p-5">
+                    <h3 class="font-bold text-lg">Smart Watch</h3>
+                    <p class="text-green-600 text-xl font-semibold mt-2">₹4,999</p>
+                    <p class="mt-2 text-gray-700"> Rating: 4.8/5</p>
+
+                    <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+                        Add To Cart
+                    </button>
+                </div>
+
+            </div>
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+
+                <div class="overflow-hidden">
+                    <img
+                        src="../assets/images/market/shoe.jpg"
+                        class="w-full h-56 object-cover hover:scale-110 transition duration-500"
+                    >
+                </div>
+
+                <div class="p-5">
+                    <h3 class="font-bold text-lg">Running Shoes</h3>
+                    <p class="text-green-600 text-xl font-semibold mt-2">₹2,499</p>
+                   <p class="mt-2 text-gray-700"> Rating: 4.8/5</p>
+                    <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+                        Add To Cart
+                    </button>
+                </div>
+
+            </div>
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+
+                <div class="overflow-hidden">
+                    <img
+                        src="../assets/images/market/headphone.jpg"
+                        class="w-full h-56 object-cover hover:scale-110 transition duration-500"
+                    >
+                </div>
+
+                <div class="p-5">
+                    <h3 class="font-bold text-lg">Headphones</h3>
+                    <p class="text-green-600 text-xl font-semibold mt-2">₹1,999</p>
+                  <p class="mt-2 text-gray-700"> Rating: 4.8/5</p>
+
+                    <button class="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+                        Add To Cart
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <footer class="bg-gray-900 text-white text-center py-4">
+        <p>© 2026 ShopZone. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
