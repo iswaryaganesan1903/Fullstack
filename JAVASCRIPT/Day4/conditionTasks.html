@@ -1,0 +1,158 @@
+<script>
+    console.log('Task 1 - Voting Eligibility');
+    let age=20
+    if(age>18){
+        console.log('Age:',age,'Eligible to Vote');
+    }
+    else{
+        console.log('Age',age,'Not Eligible to Vote'); 
+    }
+
+
+    console.log('Task 2 - Login Access');
+    let isLoggedIn = true;
+    if(isLoggedIn){
+        console.log(isLoggedIn,'Welcome User'); 
+    }
+    else{
+         console.log(isLoggedIn,'Please Login'); 
+    }
+
+
+    console.log('Task 3 - Even or Odd');
+    let c=15
+    if(c%2==0){
+        console.log('c=',c,'is a Even number');   
+    }
+    else{
+        console.log('c=',c,'is a Odd number');    
+    }
+    
+
+    console.log('Task 4 - Positive or Negative');
+    let number=-10
+    if(number>0){
+        console.log('Number',number,'Positive Number');     
+    }
+    else{
+        console.log('Number',number,'Negative number');  
+    }
+
+
+    console.log('Task 5 - Pass or Fail');
+    let mark = 40;
+    if(mark>35){
+        console.log('Mark=',mark,'Pass');
+    }
+    else{
+        console.log('Mark=',mark,'Fail'); 
+    }
+
+
+    console.log('Task 6 - Grade Calculator');
+    let userMark = 85;
+    if(80<userMark && userMark<=100){
+         console.log('Mark=',userMark,'A Grade');
+    }
+    else if(60<userMark && userMark<=80){
+        console.log('Mark=',userMark,'B Grade');   
+    }
+    else if(40<userMark && userMark<=60){
+        console.log('Mark=',userMark,'B Grade');   
+    }
+    else{
+         console.log('Mark=',userMark,'Fail');
+    }
+
+
+    console.log('Task 7 - Largest of Two Numbers');
+    let a = 50;
+    let b = 100;
+    console.log('a :',a,'  ','b :',b);
+    
+    if(a>b){
+        console.log('a is largest number');  
+    }
+    else{
+         console.log('b is largest number');  
+    }
+
+
+    console.log('Task 8 - ATM Withdrawal');
+    let balance = 5000;
+    let amount = 2000;
+    if(balance<500){
+        console.log('Insufficient Balance');   
+    }
+    else{
+        console.log('Withdrawn Successfully!');
+        
+    }
+
+
+    console.log('Task 9 - User Role System');
+    let role = "admin";
+    switch(role){
+      case "admin":
+        console.log('Admin Panel');
+        break;
+      case "trainer":
+        console.log('Trainer Panel');
+        break;
+      case "student":
+        console.log('Student Panel');
+        break;     
+    }
+
+
+    console.log('Task 10 - Day Finder');
+    let day = 3;
+    switch(day){
+        case 1:
+            console.log('Sunday');
+            break;
+        case 2:
+            console.log('Monday');
+            break;
+        case 3:
+            console.log('Tuesday');
+            break;
+        case 4:
+            console.log('Wednesday');
+            break;
+        case 5:
+            console.log('Thursday');
+            break;
+        case 6:
+            console.log('Friday');
+            break;    
+        case 7:
+            console.log('Saturday');
+            break;   
+    }
+
+
+    console.log('Task 11 - Print Numbers 1 to 10');
+    for(let a=1;a<=10;a++){
+        console.log(a);
+        
+    }
+
+
+    console.log('Task 12 - Multiplication Table');
+    let num = 5;
+    for(let i=1;i<=10;i++){
+        let m=num*i;
+        console.log(num,'x',i,'=',m);
+        
+    }
+
+
+    console.log('Task 13 - Print Even Numbers');
+    for(j=1;j<=10;j++){
+        if(j%2==0){
+            console.log(j);
+        }
+    }
+    
+</script>
