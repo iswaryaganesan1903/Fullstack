@@ -1,0 +1,107 @@
+<script>
+    console.log('Task-1:Create an array of Tamil heroes-Print all hero names using a loop.');
+    let array = ["Vijay", "Ajith", "Surya", "SK"]
+    console.log('Array one=', array);
+    let arrayTwo = []
+    let index = 0
+    for (let i = 0; i <= array.length - 1; i++) {
+        arrayTwo[index] = array[i]
+        index++
+    }
+    console.log('Array two=', arrayTwo);
+
+
+
+    console.log('Task-2:Create an array of movie collections-Find the highest collection.');
+    let movieCollection = [200, 500, 800, 400, 600]
+    console.log('Movie collection =', movieCollection);
+    let highest = movieCollection[0]
+    for (let j = 1; j <= movieCollection.length - 1; j++) {
+        if (highest < movieCollection[j]) {
+            highest = movieCollection[j]
+        }
+    }
+    console.log('Highest =', highest);
+
+
+
+    console.log('Task-3:Create an array of movie collections-Find the lowest collection.');
+    let moviesCollection = [200, 500, 800, 400, 600]
+    console.log('Movie collection =', moviesCollection);
+    let lowest = moviesCollection[0]
+    for (let j = 1; j <= moviesCollection.length - 1; j++) {
+        if (lowest > moviesCollection[j]) {
+            lowest = moviesCollection[j]
+        }
+    }
+    console.log('Lowest =', lowest);
+
+
+
+    console.log('Task-4:Create an array of movie collections-Find total collection');
+    let arr = [200, 500, 800, 400, 600]
+    sum = 0
+    for (k = 0; k < arr.length; k++) {
+        sum = sum + arr[k]
+    }
+    console.log('Total =', sum);
+
+
+
+    console.log('Task-5:Create an array of movie collections-Find the average collection.');
+    avg = sum / arr.length
+    console.log('Average', avg);
+
+
+    console.log('Task-6:Create an array of Tamil heroes-Print all hero names in reverse order.');
+    let arrayActor = ["Vijay", "Ajith", "Surya", "SK"]
+    console.log('Heros Name',arrayActor);
+    let arrayReverse = []
+    let indexPos = 0
+    for (let m = arrayActor.length - 1; m >= 0; m--) {
+        arrayReverse[indexPos] = arrayActor[m]
+        indexPos++
+    }
+    console.log('Reversed Heros Name',arrayReverse);
+
+
+    console.log('Task-7:Create an array of fruits-Search fruit');
+    let fruits=["Apple","Mango","Orange","Banana"]
+    let fruitSearch="Mango"
+    for(n=0;n<fruits.length;n++){
+        if(fruitSearch==fruits[n]){
+            console.log("Fruit Found");  
+        }
+        else{
+            console.log("Not found");
+            
+        }
+    }
+
+
+    console.log('Task-7:Create an array of fruits-Count fruits');
+    let fruit=["Apple","Mango","Orange","Banana"]
+    l=0
+    for(n=0;n<fruits.length;n++){
+       l++
+    }
+    console.log('Fruits Count=',l);
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
