@@ -3,8 +3,7 @@
     const palindrome=(movie)=>{
         let reverse=""
         for(let i=movie.length-1;i>=0;i--){
-            reverse+=movie[i]
-            
+            reverse+=movie[i]    
         }
         console.log(reverse);
         
@@ -12,8 +11,7 @@
             console.log('palindrome');
         }
         else{
-            console.log('Not a palindrome');
-            
+            console.log('Not a palindrome');    
         }
     }
     palindrome("LEVEL")
@@ -25,8 +23,7 @@
         for(i1=string.length-1;i1>=0;i1--){
             r+=string[i1]
         }
-        console.log(r);
-        
+        console.log(r);    
     }
     reverseString("vijay")
 
@@ -36,8 +33,8 @@
     let b=1
     console.log(a);
     console.log(b); 
-    const fibonoci=(num)=>{
-      for(let f1=1;f1<num-1;f1++){
+    const fibonoci=(num1)=>{
+      for(let f1=1;f1<num1-1;f1++){
         let c=a+b
         console.log(c);
         a=b
@@ -56,11 +53,8 @@
                 v1++
                 
             }
-      
-            
         }
         console.log('Vowel Count',v1);
-
     }
     vowels("SURIYA")
 
@@ -78,7 +72,97 @@
         
     }
     charFrequency("iswaryaaa","a")
+
+
+    console.log('Task 6 -Anagram Check');
+    const anagram=(word1,word2)=>{
+        let count=0
+        for(let j=0;j<word1.length;j++){
+            for(let k=0;k<word2.length;k++){
+                if(word1[j]==word2[k]){
+                    count++
+                }
+            }
+        }
+        if(count==word1.length){
+            console.log("These words are Anagram","Word1 =",word1,"Word2 =",word2);   
+        }
+        else{
+            console.log("These words are not Anagram","Word1 =",word1,"Word2 =",word2);    
+        }
+    }
+    anagram("listen","silent")
     
+
+    console.log('Task 7 -Armstrong Number');
+    const amstrong=(num)=>{
+        let h= Math.floor(num/100)
+        let r=num%100
+        let t= Math.floor(r/10)
+        let o=r%10
+        let s=(h**3)+(t**3)+(o**3)
+        console.log(s);
+        
+        if(num==s){
+            console.log(num,"is a Amstrong number");    
+        }
+        else{
+            console.log(num,"is not a Amstrong number");  
+        }
+    }
+    amstrong(153)
+
+
+    console.log('Task 8 -Prime Number');
+    const prime=(number)=>{
+        let p=true
+        for(let p1=2;p1<=Math.floor(number/2);p1++){
+            if(number%p1==0){
+                p=false
+                break;
+            }
+        }
+        if(p){
+            console.log("prime");
+        }
+        else{
+            console.log("Not a prime"); 
+        }
+    }
+    prime(17)
+
+
+    console.log('Task 9 -Factorial');
+    const fact=(findNum)=>{
+        let prod=1
+        for(let fac=1;fac<=findNum;fac++){
+            prod=fac*prod
+        }
+        console.log("Factorial value for ",findNum," is ",prod);
+    }
+    fact(5)
+
+
+    console.log('Task 9 -5-Digit Number Reverse');
+    const reverse=(giveNum)=>{
+        let tt=Math.floor(giveNum/10000)
+        let r1=giveNum%10000
+        let th=Math.floor(r1/1000)
+        let r2=r1%1000
+        let h1=Math.floor(r2/100)
+        let r3=r2%100
+        let t1=Math.floor(r3/10)
+        let o1=r3%10
+        let rev=o1*10000+t1*1000+h1*100+th*10+tt*1
+        console.log(rev);   
+    }
+    reverse(12345)
+
+
+
+
+
+
     
     
     
