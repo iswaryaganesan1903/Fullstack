@@ -1,0 +1,86 @@
+<script>
+    console.log('Task 1 - Palindrome Check');
+    const palindrome=(movie)=>{
+        let reverse=""
+        for(let i=movie.length-1;i>=0;i--){
+            reverse+=movie[i]
+            
+        }
+        console.log(reverse);
+        
+        if(movie===reverse){
+            console.log('palindrome');
+        }
+        else{
+            console.log('Not a palindrome');
+            
+        }
+    }
+    palindrome("LEVEL")
+
+
+    console.log('Task 2 - Reverse String');
+    const reverseString=(string)=>{
+        let r=""
+        for(i1=string.length-1;i1>=0;i1--){
+            r+=string[i1]
+        }
+        console.log(r);
+        
+    }
+    reverseString("vijay")
+
+
+    console.log('Task 3 - Fibonacci Series');
+    let a=0
+    let b=1
+    console.log(a);
+    console.log(b); 
+    const fibonoci=(num)=>{
+      for(let f1=1;f1<num-1;f1++){
+        let c=a+b
+        console.log(c);
+        a=b
+        b=c 
+      }
+    }
+    fibonoci(10)
+
+
+    console.log('Task 4 - Count Vowels');
+    const vowels=(name)=>{
+        let v1=0
+        for(let v=0;v<name.length;v++){
+            if(name[v]=="a" || name[v]=="e" || name[v]=="i" || name[v]=="o" || name[v]=="u" || name[v]=="A" || name[v]== "E" || name[v]=="I" || name[v]=="O" || name[v]=="U"){
+                console.log("Vowels = ",name[v]);
+                v1++
+                
+            }
+      
+            
+        }
+        console.log('Vowel Count',v1);
+
+    }
+    vowels("SURIYA")
+
+
+    
+    console.log('Task 5 - Count Character Frequency');
+    const charFrequency=(word,char)=>{
+        count=0
+        for(c=0;c<word.length;c++){
+            if(word[c]==char){
+               count++
+            }
+        }
+        console.log('Character Frequency',count);
+        
+    }
+    charFrequency("iswaryaaa","a")
+    
+    
+    
+    
+    
+</script>

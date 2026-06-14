@@ -55,38 +55,53 @@
 
     console.log('Task-6:Create an array of Tamil heroes-Print all hero names in reverse order.');
     let arrayActor = ["Vijay", "Ajith", "Surya", "SK"]
-    console.log('Heros Name',arrayActor);
+    console.log('Heros Name', arrayActor);
     let arrayReverse = []
     let indexPos = 0
     for (let m = arrayActor.length - 1; m >= 0; m--) {
         arrayReverse[indexPos] = arrayActor[m]
         indexPos++
     }
-    console.log('Reversed Heros Name',arrayReverse);
+    console.log('Reversed Heros Name', arrayReverse);
 
 
     console.log('Task-7:Create an array of fruits-Search fruit');
-    let fruits=["Apple","Mango","Orange","Banana"]
-    let fruitSearch="Mango"
-    for(n=0;n<fruits.length;n++){
-        if(fruitSearch==fruits[n]){
-            console.log("Fruit Found");  
+    let fruits = ["Apple", "Mango", "Orange", "Banana"]
+    let fruitSearch = "Mango"
+    for (n = 0; n < fruits.length; n++) {
+        if (fruitSearch == fruits[n]) {
+            console.log("Fruit Found");
         }
-        else{
+        else {
             console.log("Not found");
-            
+
         }
     }
 
 
-    console.log('Task-7:Create an array of fruits-Count fruits');
-    let fruit=["Apple","Mango","Orange","Banana"]
-    l=0
-    for(n=0;n<fruits.length;n++){
-       l++
+    console.log('Task-8:Create an array of fruits-Count fruits');
+    let fruit = ["Apple", "Mango", "Orange", "Banana"]
+    l = 0
+    for (n = 0; n < fruits.length; n++) {
+        l++
     }
-    console.log('Fruits Count=',l);
-    
+    console.log('Fruits Count=', l);
+
+
+
+    console.log('Task-9:Create an array of Tamil heroes-Find the longest hero name.');
+    let herosArray = ["Vijay", "Ajith", "Sivakarthikeyan", "SK"];
+
+    let longest = herosArray[0];
+
+    for (let i = 1; i < herosArray.length; i++) {
+        if (herosArray[i].length > longest.length) {
+            longest = herosArray[i];
+        }
+    }
+    console.log('Longest word in a Array =',longest);
+
+
 
 
 
