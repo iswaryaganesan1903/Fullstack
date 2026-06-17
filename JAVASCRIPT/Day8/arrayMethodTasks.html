@@ -66,11 +66,53 @@
             age: 25
 
         };
-        for (const name in student) {  
-            console.log(name);    
+        for (const key in student) {
+            console.log(key, " : ", student[key]);
         }
     }
     loop()
+
+    console.log('Task 8 – Array of Objects Looping');
+    const arrobjLoop = () => {
+        let actors = [
+            {
+                name: "Vijay",
+                movie: "GOAT"
+            },
+
+            {
+                name: "Ajith",
+                movie: "Vidaamuyarchi"
+            },
+
+            {
+                name: "Suriya",
+                movie: "Kanguva"
+            }
+        ]
+        actors.forEach(element => {
+            console.log(element.name, " - ", element.movie);
+        });
+    }
+    arrobjLoop()
+
+
+    console.log('Task 9 – join() Method');
+    const tamilHeros = (tamilHeroArr) => {
+        console.log('Before join : ', tamilHeroArr);
+        const showJoin = tamilHeroArr.join("|")
+        console.log("After join : ",showJoin);
+    }
+    tamilHeros(["Vijay","Ajith","Suriya","SK"])
+
+    console.log('Task 10 – includes() Method');
+    const cours = (courseArr2) => {
+        console.log('Original Array', courseArr2);
+        const showIncludes = courseArr2.includes("React")
+        console.log('New array', showIncludes);
+    
+    }
+    cours(["HTML", "CSS", "JavaScript", "React", "Node"])
 
 
 
