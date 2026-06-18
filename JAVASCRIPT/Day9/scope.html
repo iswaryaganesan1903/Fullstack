@@ -1,0 +1,33 @@
+<script>
+    console.log('Scope tasks-Task 1');
+    let hero = "Vijay";
+    const access = () => {
+        if (hero) {
+            for (let i = 0; i <= 2; i++) {
+                console.log("Hero name : ", hero);
+            }
+        }
+    }
+    access()
+
+    console.log('Scope tasks-Task 2');
+    const movie = () => {
+        let collection = 800;
+        console.log(collection);
+    }
+  
+
+    console.log('Scope tasks-Task 3');
+    if (true) {
+        var actor1 = "Ajith";
+        let actor2 = "Vijay";
+    }
+    console.log(actor1);
+    console.log(actor2);
+    
+    
+
+
+
+
+</script>

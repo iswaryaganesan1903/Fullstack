@@ -1,0 +1,22 @@
+<script>
+    console.log('Task 4-Named Function Tasks');
+    const display=()=>{
+        console.log("GOAT Movie Released");
+    }
+    const showMovie=(dis)=>{
+        dis()
+    }
+    showMovie(display)
+
+    console.log('Task 5-Create a named arrow function');
+    const add = (a,b)=>{
+           let c=a+b
+           console.log("Sum : ",c);
+    }
+    const show=(cb)=>{
+        cb()  
+    }
+    show(add(45,60))
+
+    
+</script>

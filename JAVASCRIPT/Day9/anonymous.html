@@ -1,0 +1,35 @@
+<script>
+    console.log('Task 6-Anonymous Function Tasks');
+    const datas=(callBack)=>{
+        console.log("Booking Confirmed"); 
+        callBack()   
+    }
+    datas(()=>{
+       console.log("print");
+       
+    })
+
+    console.log('Task 7-Anonymous Function Tasks');
+    const execute=(started)=>{
+        console.log("Booking Confirmed"); 
+        started()   
+    }
+    execute(()=>{
+        console.log("Time out"); 
+    })
+    setTimeout(()=>{
+       console.log("print"); 
+    },1000)
+
+    console.log('Task 8-Anonymous Function Tasks');
+    const processOrder=(call)=>{
+        console.log("Order Received"); 
+        call()   
+    }
+    processOrder(()=>{
+       console.log("Order Delivered");
+       
+    })
+
+
+</script>
