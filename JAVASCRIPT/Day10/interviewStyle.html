@@ -1,0 +1,70 @@
+<script>
+    console.log('Task 1 - Student Report Generator');
+    const func1 = () => {
+        obj1 = {
+            name: "Sudhan",
+            course: "MERN",
+            city: "Chennai"
+        }
+        const { name, course, city } = obj1
+        console.log(`Student name : ${name}
+Course : ${course}
+City : ${city}`);
+    }
+    func1()
+
+    console.log('Task 2 - Hero Array Merge');
+    const func2 = () => {
+        let heroes1 = [
+            "Vijay",
+            "Ajith"
+        ];
+
+        let heroes2 = [
+            "Suriya",
+            "SK"
+        ];
+        const merge = [...heroes1, ...heroes2]
+        console.log(`All Heros : `);
+        for (let i = 0; i < merge.length; i++) {
+            console.log(`      ${merge[i]}`);
+        }
+    }
+    func2()
+
+    console.log("Task 3 - Movie Collection Calculator");
+    const calculateTotal = (...collections) => {
+        let sum = 0
+        for (let j = 0; j < collections.length; j++) {
+            sum += collections[j]
+        }
+        console.log(`Total collection : ${sum} `);
+    }
+    calculateTotal(500, 800, 300, 700)
+
+    console.log('Task 4 - Employee Object Update');
+    const employee = {
+
+        name: "Rahul",
+
+        department: "IT",
+
+        salary: 30000
+
+    };
+    const addDetail = { ...employee, experience: 2 }
+    const { name, department, salary, experience } = addDetail
+    console.log(`Display all values : ${name},${department},${salary},${experience}`);
+
+    console.log('Task 5 - Online Course Enrollment System');
+    const enrollStudent = (studentName, ...courses) => {
+        console.log(`Student : ${studentName}`);
+        console.log('Courses : ');
+        for (let m = 0; m < courses.length; m++) {
+            console.log(`${courses[m]}`);
+        }
+    }
+    enrollStudent("Sudhan","React","Node","MongoDB")
+     
+
+</script>
