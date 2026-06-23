@@ -1,23 +1,52 @@
 <script>
     console.log('Task 4-Display collections greater than:500');
-    const collections = [ 100, 500, 800, 200, 900];
-    const greaterValues=collections.filter(e=>e>500)
-    console.log('Display collections greater than:500 are - ',greaterValues);
+    const collections = [100, 500, 800, 200, 900];
+    const greaterValues = collections.filter(e => e > 500)
+    console.log('Display collections greater than:500 are - ', greaterValues);
 
     console.log('Task 5 - Display only passed students');
-    const marks = [35,80,20,90,45];
-    const passedMarks=marks.filter(e=> e>=35)
-    console.log('Display only passed students : ',passedMarks);
+    const marks = [35, 80, 20, 90, 45];
+    const passedMarks = marks.filter(e => e >= 35)
+    console.log('Display only passed students : ', passedMarks);
 
     console.log('Task 6 - Display names having more than 4 characters');
-    const heroes = ["Vijay","Ajith","SK","Suriya","AK"];
-    const moreChar=heroes.filter(e=> e.length>4)
+    const heroes = ["Vijay", "Ajith", "SK", "Suriya", "AK"];
+    const moreChar = heroes.filter(e => e.length > 4)
     console.log(`Display names having more than 4 characters : ${moreChar}`);
 
+    console.log('task 19 -Display students whose age is above:');
+    const students = [
+
+        {
+            id: 1,
+            age: 20
+        },
+
+        {
+            id: 2,
+            age: 30
+        },
+
+        {
+            id: 3,
+            age: 18
+        }
+    ];
+    const age=students.filter(e=>e.age>20)
+    console.log('Display students whose age is above 20:',age);
     
 
-    
-    
-    
-    
+    console.log('Task 23- Display only even numbers.');
+    const array = [10, 15, 20, 25, 30]
+    const even = array.filter(e => e % 2 == 0)
+    console.log('Even numbers :', even);
+
+
+
+
+
+
+
+
+
 </script>

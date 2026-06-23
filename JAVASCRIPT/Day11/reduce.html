@@ -7,6 +7,27 @@
     console.log(`total collection : ${total}`);
 
     console.log('Task 21-Find highest number from:');
+    const array = [100,500,800,200]
+    const highest =array.reduce((acc,current)=>{
+        let high=acc
+        if(acc<current){
+            high=current
+        }
+        return high
+    },0)
+    console.log(`highest number : ${highest}`);
+
+    console.log('Task 22-Find Lowest number from:');
+    const array1 = [100,500,800,200]
+    const lowest =array1.reduce((acc,current)=>{
+        let low=acc
+        if(acc>current){
+            low=current
+        }
+        return low
+    },100)
+    console.log(`lowest number : ${lowest}`);
+    
     
     
 </script>
