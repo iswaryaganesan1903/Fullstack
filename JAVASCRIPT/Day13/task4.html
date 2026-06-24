@@ -15,13 +15,11 @@
            <p>javaScript (JS) is a high-level, dynamic programming language that serves as the core logic engine of the web. Alongside HTML (which defines content structure) and CSS (which handles layout and appearance), JavaScript brings websites to life by introducing interactivity, animation, and data manipulation</p>
         </div>
         <button onclick="hide()" class="bg-black text-white w-50 rounded">Click here</button>
-        <input type="text" class="border mt-3 rounded  data" oninput="inputBox()" >
     </div>
 </body>
 </html>
 <script>
     const myButton = document.querySelector(".hide")
-    const inputData=document.querySelector(".data")
     const hide = () => {
         if (myButton.style.display === "none") {
             myButton.style.display = "flex";
@@ -29,14 +27,7 @@
             myButton.style.display = "none";
         }
     }
-    const inputBox=()=>{
-        if(inputData.value=="show"){
-             myButton.style.display = "flex";
-        }
-        else if(inputData.value=="hide"){
-            myButton.style.display = "none";
-        }
-    }
+   
 
 
 </script>

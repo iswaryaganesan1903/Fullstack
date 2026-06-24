@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <h2 id="title" class="bg-yellow-100 p-5 mb-3 text-center text-lg"> Welcome </h2>
+    <div class="flex flex-col justify-center h-screen items-center gap-3">
+        <div>
+            <label>first Name :</label>
+            <input type="text" class="border  rounded  data1">
+        </div>
+        <div>
+            <label>Last Name :</label>
+            <input type="text" class="border  rounded  data2">
+        </div>
+        <button onclick="addToHead()" class="bg-black text-white w-50 rounded">Click here</button>
+    </div>
+
+</body>
+
+</html>
+<script>
+     const myHeading=document.getElementById("title")
+     const myInput1=document.querySelector(".data1")
+     const myInput2=document.querySelector(".data2")
+     const addToHead=()=>{
+        myHeading.innerText=myInput1.value+myInput2.value
+     }
+
+</script>

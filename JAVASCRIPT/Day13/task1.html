@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+     <h1 id="title" class="bg-yellow-100 p-5 mb-3 text-center text-lg"> Welcome </h1>
+     <div  class="flex flex-col justify-center h-screen items-center"> 
+        <input type="text" class="border  rounded  data">
+        <button onclick="changeHeading()" class="bg-black text-white w-50 mt-3 rounded">Click here</button>
+    </div>
+    
+</body>
+</html>
+<script>
+    const myHeading=document.getElementById("title")
+    const input=document.querySelector(".data")
+    changeHeading=()=>{
+        myHeading.innerText=input.value
+    }
+</script>

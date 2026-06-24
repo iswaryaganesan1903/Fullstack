@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <h1 class="bg-yellow-100 p-5 mb-3 text-center text-lg"> Welcome </h1>
+    <div class="flex flex-col justify-center h-screen items-center">
+        <div class="flex items-center justify-center bg-blue-500 m-2 p-2 h-30 w-200 hide" style="display: none;">
+            <p>javaScript (JS) is a high-level, dynamic programming language that serves as the core logic engine of the
+                web. Alongside HTML (which defines content structure) and CSS (which handles layout and appearance),
+                JavaScript brings websites to life by introducing interactivity, animation, and data manipulation</p>
+        </div>
+        <button onclick="show()" class="bg-black text-white w-50 rounded">Click here</button>
+    </div>
+</body>
+
+</html>
+<script>
+    const myButton = document.querySelector(".hide")
+    const show = () => {
+       
+        myButton.style.display = "flex";
+        
+    }
+
+</script>
