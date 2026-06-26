@@ -1,3 +1,22 @@
 <script>
-    
+    const findDuplicate=(array)=>{
+       let duplicateValue=false
+       let newArray=[array[0]]
+       let index=1
+       for(let i=1;i<array.length;i++){
+        for(let j=0;j<newArray.length;j++){
+              if(array[i]==newArray[j]){
+                duplicateValue=true
+                break
+              }
+        }
+        if(!duplicateValue){
+            newArray[index]=array[i]
+            index++
+        }
+       }
+       console.log(`Duplicate values removed array ${newArray}`);
+       
+    }
+    findDuplicate([1,2,3,4,5,6,6,4,5] )
 </script>
