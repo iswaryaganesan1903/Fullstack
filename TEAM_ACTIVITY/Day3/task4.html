@@ -1,0 +1,14 @@
+<script>
+    const highest = (array ) => {
+        const highest = array.reduce((acc, current) => {
+            let high = acc
+            if (acc < current) {
+                high = current
+            }
+            return high
+        },0)
+        console.log(`Highest collection : ${highest}`);
+    }
+    highest([100, 500, 800, 200,1000,700]) 
+
+</script>

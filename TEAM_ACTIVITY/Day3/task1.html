@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Task</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <h1 class="bg-yellow-100 p-5 mb-3 text-center text-lg"> Welcome </h1>
+    <div class="flex flex-col justify-center h-screen items-center">
+        <div class="flex  h-screen items-center">
+            <label>Student mark:</label>
+            <input type="text" class="border markGiven" placeholder="Enter Your Mark">
+        </div>
+        <button onclick="gradesystem()" class="bg-black text-white w-64 mt-4 rounded">click</button>
+    </div>
+</body>
+<script>
+    const mark = document.querySelector(".markGiven").value
+    const gradeSystem = (mark) => {
+        if (mark >= 90 && mark <= 100) {
+            console.log("grade a");
+
+        } else if (mark > 80 && mark <= 89) {
+            console.log("grade b");
+
+        } else if (mark >= 70 && mark <= 79) {
+            console.log("grade c");
+
+        } else if (mark > 60 && mark <= 69) {
+            console.log("grade d");
+        } else {
+            console.log("fail");
+
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hide Show Box</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-screen flex flex-col justify-center items-center ">
+
+   
+    <p id="box" class="bg-blue-500 text-white p-4  flex justify-center items-center rounded ">
+       Samsung is a South Korean multinational conglomerate known for its leadership in electronics, semiconductors, and consumer technology.
+    </p>
+
+    
+    <button 
+        onclick="hideShowBox()"
+        class="mt-5 bg-black text-white px-6 py-2 rounded hover:bg-gray-800">
+        hide
+    </button>
+    <button 
+        onclick="hideShow()"
+        class="mt-5 bg-black text-white px-6 py-2 rounded hover:bg-gray-800">
+        show
+    </button>
+    
+
+
+    <script>
+        
+    const paragraph = document.getElementById("box");
+    const hideShowBox = () => {
+        
+          paragraph.style.display = "none"
+    }
+    const hideShow = () => {
+        
+          paragraph.style.display = "flex"
+    }
+    </script>
+
+</body>
+</html>
