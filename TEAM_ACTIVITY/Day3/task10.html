@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-screen flex flex-col justify-center items-center bg-gray-100">
+
+
+   
+    <div class="bg-white p-6 rounded shadow-md w-96">
+
+        <h1 class="text-2xl font-bold mb-5 text-center">
+            Registration Form
+        </h1>
+
+        <input 
+        id="name"
+        type="text"
+        placeholder="Enter Name"
+        class="border p-2 w-full mb-3 rounded">
+
+
+        <input 
+        id="email"
+        type="email"
+        placeholder="Enter Email"
+        class="border p-2 w-full mb-3 rounded">
+
+
+        <input 
+        id="age"
+        type="number"
+        placeholder="Enter Age"
+        class="border p-2 w-full mb-3 rounded">
+
+
+        <button 
+        onclick="registerUser()"
+        class="bg-blue-600 text-white px-5 py-2 rounded w-full">
+            Register
+        </button>
+
+    </div>
+
+
+    
+
+    <div id="card" 
+    class="hidden bg-white p-5 mt-5 rounded shadow-md w-96">
+
+    </div>
+
+
+
+<script>
+
+const registerUser = () => {
+
+    // Getting input values
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const age = document.getElementById("age").value;
+
+
+    // Display inside card
+
+    const card = document.getElementById("card");
+
+
+    card.innerHTML = `
+        <h2 class="text-xl font-bold mb-3">
+            User Details
+        </h2>
+
+        <p><b>Name :</b> ${name}</p>
+        <p><b>Email :</b> ${email}</p>
+        <p><b>Age :</b> ${age}</p>
+    `;
+
+
+    
+
+    card.classList.remove("hidden");
+
+}
+
+</script>
+
+
+</body>
+</html>
