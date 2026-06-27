@@ -1,0 +1,16 @@
+<script>
+    const charFrequency=(str)=>{
+        let count=0
+        for(let i=0;i<str.length;i++){
+            for(let j=i+1;j<str.length;j++){
+                  if(str[i]===str[j]){
+                        count++
+                  }
+                       
+            }
+          console.log(str[i],count);
+        }
+        
+    }
+    charFrequency("javascript")
+</script>
