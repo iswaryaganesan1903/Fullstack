@@ -1,16 +1,19 @@
 <script>
     const secondLargest=(array,largest)=>{
-        let high=array[0]
-        //let newArray=[array[0]]
-        //let index=1
-        for(let i=0;i<array.length-1;i++){
-            for(let j=i+1;j<array.length;j++){
-                if(array[i]<array[j]){
-                     arr[i]=arr[j]
-                     arr[j]=arr[i]
-                     let temp=arr[j]
+        let longest=0
+        let secondLongest=0
+        for(let i=0;i<array.length;i++){
+                if(array[i]>longest){
+                  secondLongest=longest
+                  longest=array[i]
+                }
+                else if(array[i]>secondLongest && array[i]!==longest){
+                   secondLongest=array[i]
                 }
             }
-        }
+        
+        console.log(`Second Longest is : ${secondLongest}`);
+        
     }
+    secondLargest([10, 45, 22, 78, 56, 78, 34])
 </script>
