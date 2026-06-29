@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <h1 class="bg-yellow-100 p-5 mb-3 text-center text-lg">DOM Tasks</h1>
+    <div class="bg-white p-5 border rounded-lg  mx-auto mt-10 " style="height:200px;width:1200px" ;>
+        <div class="p-3 flex flex-col items-center gap-3">
+            <h2 class="  text-center text-lg">Task 6 - Search Hero</h2>
+            <div class="flex gap-3">
+                <label>Enter hero name:</label>
+                <input type="text" class="border inputBox">
+            </div>
+            <button class="ml-20 border bg-black text-white w-40 rounded" onclick="search()">click here</button>
+        </div>
+    </div>
+
+
+    <div class="bg-white p-5 border rounded-lg  mx-auto mt-10 " style="height:200px;width:1200px" ;>
+        <div class="p-3 flex flex-col items-center gap-3">
+            <h2 class="  text-center text-lg">Task 6 - Search Hero</h2>
+            <div class="flex gap-3">
+                <label>Enter Lucky Number:</label>
+                <input type="text" class="border inputBox1">
+            </div>
+            <button class="ml-20 border bg-black text-white w-40 rounded" onclick="lucky()">click here</button>
+        </div>
+    </div>
+
+
+    <div class="bg-white p-5 border rounded-lg mx-auto mt-10" style="height:300px;width:1200px">
+        <div class="p-3 flex flex-col items-center gap-3">
+            <h2 class="text-lg">Task 8 - Product Price Calculator</h2>
+
+            <div>
+                <label>Product Name:</label>
+                <input type="text" class="border product">
+            </div>
+
+            <div>
+                <label>Quantity:</label>
+                <input type="number" class="border quantity">
+            </div>
+
+            <div>
+                <label>Price:</label>
+                <input type="number" class="border price">
+            </div>
+
+            <button class="border bg-black text-white w-40 rounded" onclick="calculate()">Calculate</button>
+
+            <div class="result"></div>
+        </div>
+    </div>
+
+
+
+    <div class="bg-white p-5 border rounded-lg mx-auto mt-10" style="height:250px;width:1200px">
+        <div class="p-3 flex flex-col items-center gap-3">
+
+            <h2 class="text-lg">Task 9 - Random Quote Generator</h2>
+
+            <button class="border bg-black text-white w-40 rounded" onclick="quote()">
+                Show Quote
+            </button>
+
+            <div class="quoteResult"></div>
+
+        </div>
+    </div>
+
+
+    <div class="bg-white p-5 border rounded-lg mx-auto mt-10" style="height:350px;width:1200px">
+        <div class="p-3 flex flex-col items-center gap-3">
+
+            <h2 class="text-lg">Task 10 - Student ID Generator</h2>
+
+            <div>
+                <label>Name:</label>
+                <input type="text" class="studentName border">
+            </div>
+
+            <div>
+                <label>Course:</label>
+                <input type="text" class="course border">
+            </div>
+
+            <button class="border bg-black text-white w-40 rounded" onclick="student()">
+                Generate
+            </button>
+
+            <div class="studentResult border p-3 w-80"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    const search = () => {
+        let myInput = document.querySelector(".inputBox").value;
+        let array = ["Vijay", "Ajith", "Suriya", "SK", "Dhanush"];
+
+        let found = false;
+
+        for (let i = 0; i < array.length; i++) {
+            if (myInput == array[i]) {
+                found = true;
+                break;
+            }
+        }
+
+        if (found) {
+            alert("Found");
+        } else {
+            alert("Not Found");
+        }
+    }
+
+    const lucky = () => {
+        let myInput1 = Number(document.querySelector(".inputBox1").value);
+        if (myInput1 % 7 == 0) {
+            alert("Found");
+        } else {
+            alert("Not Found");
+        }
+    }
+
+
+    const calculate = () => {
+
+        let product = document.querySelector(".product").value;
+        let quantity = Number(document.querySelector(".quantity").value);
+        let price = Number(document.querySelector(".price").value);
+
+        let total = quantity * price;
+
+        document.querySelector(".result").innerHTML =
+            `
+    Product : ${product}<br>
+    Quantity : ${quantity}<br>
+    Total : ₹${total}
+    `;
+    }
+
+
+    const quote = () => {
+
+        let quotes = [
+            "Dream Big",
+            "Never Give Up",
+            "Success Needs Hard Work",
+            "Believe Yourself",
+            "Practice Makes Perfect"
+        ];
+
+        let random = Math.floor(Math.random() * quotes.length);
+
+        document.querySelector(".quoteResult").innerHTML = quotes[random];
+
+    }
+
+
+    let id = 1001;
+
+    const student = () => {
+
+        let name = document.querySelector(".studentName").value;
+        let course = document.querySelector(".course").value;
+
+        document.querySelector(".studentResult").innerHTML =
+            `
+    <h3>Student Details</h3>
+    ID : STU${id}<br>
+    Name : ${name}<br>
+    Course : ${course}
+    `;
+
+        id++;
+    }
+</script>

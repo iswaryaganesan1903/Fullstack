@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <h1 class="bg-yellow-100 p-5 mb-3 text-center text-lg">DOM Tasks</h1>
+    <div class="bg-white p-5 border rounded-lg  mx-auto mt-10 " style="height:300px;width:1200px" ;>
+        <div class="p-3 flex flex-col items-center gap-3">
+            <h2 class=" p-5 text-center text-lg">Task 1 - Character Counter</h2>
+            <div class="flex gap-3">
+                <label>Type here:</label>
+                <textarea name="" class="border h-20 w-80 " oninput="myText()" id="text"></textarea>
+            </div>
+            <p id="para" class="mr-70">Character count :</p>
+        </div>
+    </div>
+
+
+    <div class="bg-white p-5 border rounded-lg  mx-auto mt-10 " style="height:200px;width:1200px" ;>
+        <div class="p-3 flex flex-col items-center gap-3">
+            <h2 class=" p-5 text-center text-lg">Task 2 - Age Category Checker</h2>
+            <div class="flex gap-3">
+                <label>Type here:</label>
+                <input type="text" class="border inputBox">
+            </div>
+            <button class="ml-20 border bg-black text-white w-40 rounded" onclick="showAge()">click here</button>
+        </div>
+    </div>
+
+
+    <div class="bg-white p-5 border rounded-lg block mx-auto mt-10 hide" style="height:200px;width:1200px" ;>
+        <div class="p-3 flex flex-col items-center gap-3">
+            <h2 class=" p-5 text-center text-lg">Task 3 - Dark Mode / Light Mode</h2>
+            <button class="border bg-black text-white w-40 rounded" onclick="hideShow()">click here</button>
+
+        </div>
+    </div>
+
+
+    <div class="bg-white p-5 border rounded-lg  mx-auto mt-10 " style="height:200px;width:1200px" ;>
+        <div class="p-3 flex flex-col items-center gap-3">
+            <h2 class=" p-5 text-center text-lg">Task 4 - Movie Ticket Calculator</h2>
+            <div class="flex gap-3">
+                <label>Ticket Count:</label>
+                <input type="number" oninput="ticket()" class="border data">
+                <p id="paragraph">Total Amount :</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="bg-white p-5 border rounded-lg mx-auto mt-10" style="width:1200px">
+        <div class="p-3 flex flex-col items-center gap-3">
+            <h2 class="text-lg">Profile Card Generator</h2>
+
+            <div class="flex gap-3">
+                <label>Name:</label>
+                <input type="text" class="border p-1 name">
+            </div>
+
+            <div class="flex gap-3">
+                <label>Role:</label>
+                <input type="text" class="border p-1 role">
+            </div>
+
+            <div class="flex gap-3">
+                <label>Company:</label>
+                <input type="text" class="border p-1 company">
+            </div>
+
+            <button class="border bg-black text-white w-40 rounded" onclick="generateCard()">
+                Generate
+            </button>
+
+            <div id="card" class="border w-80 p-3 mt-3 rounded"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    let myPara = document.getElementById("para");
+    const myText = () => {
+        let textArea = document.getElementById("text").value;
+        myPara.innerText = "Character count: " + textArea.length;
+    }
+
+
+    const showAge = () => {
+        let myInput = Number(document.querySelector(".inputBox").value)
+        if (myInput > 0 && myInput <= 12) {
+            alert("child")
+        }
+        else if (myInput >= 13 && myInput <= 19) {
+            alert("Teenager")
+        }
+        else if (myInput >= 20 && myInput <= 59) {
+            alert("Adult")
+        }
+        else if (myInput >= 60) {
+            alert("Senior Citizen")
+        }
+    }
+
+
+    const hideShow = () => {
+        let myData = document.querySelector(".hide")
+        if (myData.style.background == "white") {
+            myData.style.background = "black"
+        }
+        else {
+            myData.style.background = "white"
+        }
+    }
+
+
+    const ticket = () => {
+        let myParagraph = document.getElementById("paragraph");
+        let inData = Number(document.querySelector(".data").value);
+        let amount = inData * 150;
+
+        myParagraph.innerText = "Total Amount : " + amount;
+    }
+
+
+    const generateCard = () => {
+        let name = document.querySelector(".name").value;
+        let role = document.querySelector(".role").value;
+        let company = document.querySelector(".company").value;
+
+        let card = document.getElementById("card");
+
+        card.innerHTML = `
+        <h2><b>${name}</b></h2>
+        <p>Role : ${role}</p>
+        <p>Company : ${company}</p>
+    `;
+    }
+
+</script>
