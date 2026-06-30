@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table forming</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>price</th>
+        </thead>
+        <tbody id="tableData">
+
+        </tbody>
+    </table>
+
+
+
+
+
+    <script>
+        const dataShow=async()=>{
+            const datas=await fetch("https://dummyjson.com/users")
+            const res= await datas.json()
+            //console.log(res.carts);
+            const result=res.users
+            const tdata=document.getElementById("tableData")
+            result.forEach((e,i)=>{
+                tdata.innerHTML +=`
+                <tr>
+                    <td>${i+1}</td>
+                <td>${e.firstName}</td>
+                 <td>${e.lastName}</td>
+                </tr>
+                 `
+            })
+
+        }
+        dataShow()
+    </script>
+</body>
+</html>
