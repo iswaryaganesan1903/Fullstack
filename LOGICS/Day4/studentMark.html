@@ -1,0 +1,42 @@
+<script>
+    const student = () => {
+        let count1 = 0
+        let count2 = 0
+        const students = [
+            { id: 1, name: "Ravi", mark: 80 },
+            { id: 2, name: "Priya", mark: 95 },
+            { id: 3, name: "Arun", mark: 60 },
+            { id: 4, name: "Kumar", mark: 30 }
+        ];
+        console.log(`Total Students:${students.length}`);
+        for(let i=0;i<students.length;i++){
+            if(students[i].mark>35){
+                count1++
+            }
+        }
+        console.log(`Passed Students:${count1}`);
+        for(let i=0;i<students.length;i++){
+            if(students[i].mark<35){
+                count2++
+            }
+        }
+        console.log(`Passed Students:${count2}`);
+        let total=0
+        for(let i=0;i<students.length;i++){
+            total+=students[i].mark
+        }
+        let avg=total/students.length
+        console.log(`Average Mark:${avg}`);
+        let high=students[0].mark
+        let topper=students[0].name
+        for(let i=0;i<students.length;i++){
+            if(students[i].mark>high){
+                high=students[i].mark
+                topper=students[i].name
+            }
+        }
+        console.log(`Topper:${topper}`);
+
+    }
+    student()
+</script>

@@ -1,0 +1,27 @@
+<script>
+    const productList = () => {
+        let count1 = 0
+        let count2 = 0
+        const products = [
+            { id: 1, name: "Laptop", stock: 5 },
+            { id: 2, name: "Mobile", stock: 0 },
+            { id: 3, name: "Watch", stock: 8 },
+            { id: 4, name: "Keyboard", stock: 0 }
+        ];
+        console.log(`Total Products:${products.length}`);
+        for (let i = 0; i < products.length; i++) {
+            if (products[i].stock > 0) {
+                count1++;
+            }
+        }
+        console.log(`Available:${count1}`);
+        for (let i = 0; i < products.length; i++) {
+            if (products[i].stock == 0) {
+                count2++;
+            }
+        }
+        console.log(`Out Of Stock:${count2}`);
+
+    }
+    productList()
+</script>
