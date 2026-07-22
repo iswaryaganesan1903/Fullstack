@@ -1,0 +1,23 @@
+.profileImg{
+  height: 200px;
+  width: 300px;
+
+}
+.card{
+  background:pink;
+  height: 300px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  gap: 5px;
+}
+.page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+
+}

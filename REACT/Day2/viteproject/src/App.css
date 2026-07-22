@@ -1,0 +1,91 @@
+.container {
+  width: 80%;
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 100%;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="submit"] {
+  width: 150px;
+  padding: 10px;
+  background: royalblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+input[type="submit"]:hover {
+  background: darkblue;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th {
+  background: royalblue;
+  color: white;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
