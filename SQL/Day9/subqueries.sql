@@ -45,7 +45,7 @@ SELECT * FROM Employees where salary = (SELECT max(salary) from Employees);
   -- Task3
 SELECT * FROM Employees where salary = (SELECT min(salary) from Employees);
   -- Task4
-SELECT department from Employees WHERE name="Ajith";
+SELECT department from Employees WHERE name ="Ajith";
 SELECT * from Employees WHERE department IN (SELECT department from Employees WHERE name="Ajith");
 -- Task5
 SELECT department from Employees WHERE salary>40000;
